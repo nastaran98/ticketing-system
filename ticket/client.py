@@ -91,6 +91,7 @@ while choice != '10':
         r = requests.post("http://localhost:3000/logout?", data=userinfo).json()
         if r['code'] and r['code'] == "200":
             print("Logged out Seccessfully \n ")
+			token=""
 
         else:
             print(json.dumps(r))
